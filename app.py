@@ -33,9 +33,10 @@ def main():
             User Question: {query}
             """
             messages = [
-                {'role': 'system', 'content': 'You are a helpful assistant.'},
-                {'role': 'user', 'content': prompt}
-            ]
+    {"role": "system", "content": "You are a helpful, polite, and professional assistant. Always answer factually and avoid sarcasm or humor."},
+    {"role": "user", "content": "Explain the benefits of solar energy."}
+]
+
             response = chat_groq(messages)
 
             st.session_state.chat_history.extend([
