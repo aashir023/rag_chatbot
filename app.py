@@ -1,7 +1,9 @@
 import streamlit as st
+import os
 from rag_chatbot import load_docs_from_path, create_vector_store, chat_groq
 
-PDF_PATH = "E:/ioptime/Chatbot task/Chatbot/Dell_data.pdf"
+# Use relative path to the PDF file now in your repo
+PDF_PATH = os.path.join("Dell_data.pdf")
 
 def main():
     st.set_page_config(page_title='RAG Chatbot')
