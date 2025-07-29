@@ -33,7 +33,7 @@ def chat_groq(messages):
         model="llama3-70b-8192",
         messages=messages,
         max_tokens=1024,
-        temperature=1.3,
+        temperature=0.7,
         stream=True,
     )
     for chunk in stream:
