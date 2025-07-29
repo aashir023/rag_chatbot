@@ -33,8 +33,10 @@ def main():
             User Question: {query}
             """
             messages = [
-    {"role": "system", "content": "You are a helpful, polite, and professional assistant. Always answer factually and avoid sarcasm or humor."},
-    {"role": "user", "content": "Explain the benefits of solar energy."}
+   messages = [
+                {'role': 'system', 'content': 'You are a helpful assistant. Avoid being funny or sarcastic in your response and always look for an answer from the given pdf file that you are trained on'},
+                {'role': 'user', 'content': prompt}
+            ]
 ]
 
             response = chat_groq(messages)
