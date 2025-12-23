@@ -1,10 +1,10 @@
 fastapi
 uvicorn[standard]
 python-dotenv
-langchain
 langchain-community
+langchain-text-splitters
 faiss-cpu
 sentence-transformers
-transformers
-huggingface-hub
 groq
+jinja2
+python-multipart
