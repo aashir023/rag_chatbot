@@ -1,8 +1,10 @@
-streamlit
+fastapi
+uvicorn[standard]
+python-dotenv
 langchain
 langchain-community
 faiss-cpu
 sentence-transformers
-python-dotenv
+transformers
+huggingface-hub
 groq
-pypdf
